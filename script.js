@@ -2,7 +2,12 @@ const formBody = document.getElementById("form-body");
 
 const sideNavBar = document.getElementById("sideNavBar1");
 
+const AssessmentOverview = document.getElementById(
+  "assessment-overview-mobile"
+);
+
 formBody.style.display = "none";
+AssessmentOverview.style.display = "none";
 
 const showForm = () => {
   formBody.style.display = "inline";
@@ -20,4 +25,8 @@ const showNavBar = () => {
 
 const hideNavBar = () => {
   sideNavBar.style.display = "none";
+};
+
+const showAssessmentOverview = () => {
+  AssessmentOverview.style.display = "block";
 };
