@@ -30,14 +30,7 @@
         <i class="fa-solid fa-clipboard-question"></i>
         <p>My Library</p>
       </div>
-      <!-- <div class="my-admin">
-        <p class="admin">Admin</p>
-      </div>
-
-      <div class="roundStatus">
-        <i class="fa-solid fa-link"></i>
-        <p>Round <br >Status</p>
-      </div> -->
+      
       <hr class="nav-line">
 
       <div class="admin-round">
@@ -51,12 +44,7 @@
         </div>
       </div>
 
-      <!-- For mobile -->
-
-      
     </div>
-
-   
 
     <!-- Main Body -->
 
@@ -205,7 +193,8 @@
 <div id="form-body">
   <div class="form">
     <span class="form-heading">
-      <h2>Create new assessment</h2>
+      <h2 id="form-heading1">Create new assessment</h2>
+      <h2 id="form-heading2">Sub-Section Details</h2>
       <i onclick={hideForm()} id="cross" class="fa-solid fa-xmark"></i>
     </span>
     <hr />
@@ -246,13 +235,13 @@
         <option value="select">Select</option>
       </select>
     </div>
-    <div class="mb-3">
+    <div class="mb-3"  id="desktop-mb3">
       <label for="formGroupExampleInput2" class="form-label">Skills</label>
       <div id="skills" class="form-control">
         <div class="div-1">
           <span class="skill">UI/UX and Design X</span>
-          <span class="skill">No of Question X</span
-          ><span class="skill"> Web Development X</span>
+          <span class="skill">No of Question X</span>
+          <span class="skill"> Web Development X</span>
         </div>
         <div>
           <span class="skill">UI/UX and Design X</span
@@ -261,6 +250,25 @@
         <input class="skill-input" type="text" placeholder="Type Here" />
       </div>
     </div>
+
+    <!-- For Mobile -->
+
+    <div class="mb-3" id="mobile-mb3">
+      <label for="formGroupExampleInput2" class="form-label">Skills</label>
+      <div id="skills" class="form-control">
+        <div class="div-1">
+          <span class="skill">UI/UX and Design X</span>
+          <span class="skill">No of Question X</span>
+        </div>
+          <span class="skill"> Web Development X</span>
+          <span class="skill">UI/UX and Design X</span>
+        <div class="div-2">
+          <span class="skill"> Web Development X</span>
+        </div>
+        <input class="skill-input" type="text" placeholder="Type Here" />
+      </div>
+    </div>
+    <!-- End -->
 
     <div class="mb-3">
       <label for="formGroupExampleInput2" class="form-label"
@@ -272,6 +280,7 @@
         id="formGroupExampleInput2"
         placeholder="HH:MM:SS"
       />
+      <button>Next</button>
     </div>
   </div>
 </div>

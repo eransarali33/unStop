@@ -515,6 +515,10 @@ h2 {
   padding-left: 15px;
 }
 
+#mobile-mb3 {
+  display: none;
+}
+
 #hamburger {
   display: none;
   padding: 2%;
@@ -529,6 +533,14 @@ h2 {
   width: 80%;
   margin: 0 auto;
   color: #e6dddde5;
+}
+
+#form-heading2 {
+  display: none;
+}
+
+button {
+  display: none;
 }
 
 /* Responsive adjustments */
@@ -643,5 +655,48 @@ h2 {
     justify-content: space-between;
     flex-direction: row-reverse;
     margin-top: 10px;
+  }
+
+  /* Form Section */
+
+  #form-heading2 {
+    display: block;
+  }
+
+  #form-heading1 {
+    display: none;
+  }
+  .skill {
+    padding: 8px;
+    background-color: rgb(184, 184, 212);
+    color: blue;
+    border-radius: 10px;
+    margin: 0 10px;
+    font-size: xx-small;
+  }
+
+  .div-1 {
+    margin: 25px 0;
+  }
+
+  .div-2 {
+    margin: 25px 0;
+  }
+
+  #mobile-mb3 {
+    display: block;
+  }
+
+  #desktop-mb3 {
+    display: none;
+  }
+
+  button {
+    display: inline;
+    width: 80%;
+    height: 7%;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
   }
 }
