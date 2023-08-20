@@ -1,0 +1,647 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent-div {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Set a background color and font */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* Style the side navigation bar */
+.sideNavBar {
+  background-color: #eee5e5;
+  color: black;
+  width: 220px;
+  position: fixed;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideNavBar p {
+  padding: 5px 20px;
+  margin: 5% auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.sideNavBar i {
+  padding: 0;
+  margin: 5% auto;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: flex;
+  justify-content: center;
+}
+
+.assessment {
+  margin: 0 auto;
+  width: 70%;
+  height: 15%;
+  background-color: #c3cfe0;
+  color: blue;
+  border: 1px solid blue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.admin-round .my-admin {
+  margin: 10px auto;
+  width: 40%;
+  height: 36%;
+  background-color: #eedbd9;
+  color: rgb(195, 64, 64);
+  border: 1px solid rgb(195, 64, 64);
+  border-radius: 15px;
+}
+
+.admin-round {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Adjust the main content area */
+.main-body {
+  margin-left: 240px;
+  padding: 20px;
+  background-color: white;
+  width: calc(100% - 240px);
+  border: 1px solid white;
+  border-radius: 15px;
+}
+
+/* Style header and section titles */
+header {
+  font-size: 24px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+}
+.assessment2 {
+  padding-right: 7px;
+}
+
+.my-assessment {
+  padding-left: 7px;
+  color: rgb(25, 25, 83);
+}
+
+u {
+  text-underline-offset: 27px;
+}
+.vertical {
+  border-left: 1px solid rgb(184, 184, 197);
+  height: 35px;
+  position: relative;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.heading-2 {
+  padding: 20px 0;
+}
+
+.heading-3 {
+  padding-top: 20px;
+}
+
+/* Style assessment overview */
+
+.a {
+  width: 10vw;
+}
+.b {
+  width: 20vw;
+}
+.c {
+  width: 20vw;
+}
+.d {
+  width: 10vw;
+}
+
+.text {
+  display: flex;
+  justify-self: flex-start;
+  font-size: x-small;
+  font-weight: 600;
+}
+
+.assessment-overview {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-bottom: 30px;
+  border-radius: 15px;
+  border: 1px solid gray;
+}
+
+.assessment-overview .numbers {
+  color: rgb(35, 207, 35);
+  font-size: small;
+  padding: 5px 0 0 5px;
+}
+
+.assessment-overview .a {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  border: 1px solid rgb(117, 110, 110);
+  padding: 1% 2%;
+  border-radius: 15px 0 0 15px;
+}
+
+.assessment-overview .a span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding-left: 18%;
+}
+
+.assessment-overview .a span i {
+  border-radius: 5px;
+  padding: 5%;
+  background-color: rgb(209, 209, 227);
+  margin-right: 6px;
+}
+
+.assessment-overview .a span h2 {
+  padding-top: 6px;
+  font-weight: 600;
+}
+
+.assessment-overview .b {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 1% 2.5%;
+  border: 1px solid rgb(117, 110, 110);
+}
+
+.assessment-overview .b .b-body {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.assessment-overview .b .b-body span i {
+  border-radius: 5px;
+  padding: 35%;
+  background-color: rgb(209, 209, 227);
+  margin-right: 16px;
+  margin-top: 10px;
+}
+.assessment-overview .b .b1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding-left: 8px;
+}
+
+.assessment-overview .b .b1 .b1a {
+  display: flex;
+  flex-direction: row;
+}
+
+.assessment-overview .b .b2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.assessment-overview .b .b2 .b2a {
+  display: flex;
+  flex-direction: row;
+}
+
+.assessment-overview .b .b-head {
+  display: flex;
+  justify-self: flex-start;
+}
+.assessment-overview .c .c-body span i {
+  border-radius: 5px;
+  padding: 35%;
+  background-color: rgb(232, 202, 202);
+  margin-right: 16px;
+  margin-top: 10px;
+}
+
+.assessment-overview .c {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  border: 1px solid rgb(117, 110, 110);
+  padding: 1% 2.5%;
+}
+
+.assessment-overview .c .c-body {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+.assessment-overview .c .c1 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding-left: 8px;
+}
+
+.assessment-overview .c .c1 .c1a {
+  display: flex;
+  flex-direction: row;
+}
+
+.assessment-overview .c .c2 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.assessment-overview .c .c2 .c2a {
+  display: flex;
+  flex-direction: row;
+}
+
+.assessment-overview .c .c3 {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.assessment-overview .c .c3 .c3a {
+  display: flex;
+  flex-direction: row;
+}
+
+.assessment-overview .c .c-head {
+  display: flex;
+  justify-self: flex-start;
+}
+.assessment-overview .d {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 1% 3.17%;
+  border-radius: 0 15px 15px 0;
+  border: 1px solid rgb(117, 110, 110);
+}
+
+.assessment-overview .d span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.assessment-overview .d span i {
+  border-radius: 5px;
+  padding: 5%;
+  background-color: rgb(209, 209, 227);
+  margin-right: 6px;
+}
+
+.assessment-overview .d span h2 {
+  padding-top: 6px;
+  font-weight: 600;
+}
+
+.assessment-overview .d .d-head {
+  display: flex;
+  justify-self: flex-start;
+}
+
+.assessment-overview div {
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Style my assessment section */
+.my-assessment {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.my-assessment div {
+  flex: 1;
+  min-width: 300px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #eee4e4;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.my-assessment .new-assessment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+}
+
+.my-assessment .new-assessment i {
+  margin-bottom: 15px;
+  font-size: xx-large;
+  padding: 16px;
+  border-radius: 50%;
+  background-color: rgb(249, 245, 245);
+  color: rgb(30, 84, 138);
+  cursor: pointer;
+}
+.my-assessment .new-assessment p {
+  font-size: x-small;
+  font-weight: 700;
+  display: flex;
+  justify-self: center;
+}
+
+.math-assessment1a {
+  display: flex;
+  flex-direction: row;
+}
+
+.icons-math {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icons-math .fa-briefcase {
+  margin-bottom: 15px;
+  font-size: x-large;
+  padding: 16px;
+  border-radius: 5px;
+  background-color: rgb(211, 214, 222);
+  color: rgb(30, 84, 138);
+}
+
+.math-assessment1b {
+  display: flex;
+  flex-direction: row;
+}
+
+.math-assessment1b span {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+}
+
+.math-assessment1b span .lp-1 {
+  margin-left: 10px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: rgb(90, 49, 131);
+  color: white;
+}
+
+.math-assessment1b span .lp-2 {
+  margin-left: 10px;
+  padding: 6px;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
+.math-assessment1b-text {
+  padding: 9% 1%;
+}
+
+.math-assessment1a-text {
+  padding-left: 7%;
+}
+
+/* -----------Form Styling--------- */
+.form-heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#cross {
+  font-size: large;
+  cursor: pointer;
+}
+#form-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.6);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 40vw;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 70%;
+  max-width: 500px;
+  background-color: white;
+}
+
+.form h2 {
+  margin-bottom: 10px;
+}
+
+.form hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: large;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.skill {
+  padding: 8px;
+  background-color: rgb(184, 184, 212);
+  color: blue;
+  border-radius: 10px;
+  margin: 0 10px;
+  font-size: x-small;
+}
+
+.div-1 {
+  margin: 25px 0;
+}
+
+.skill-input {
+  margin-top: 20px;
+  width: 90%;
+  height: 35px;
+  border-radius: 10px;
+  border: 1px solid rgb(210, 199, 199);
+  font-size: large;
+  color: black;
+  padding-left: 15px;
+}
+
+#hamburger {
+  display: none;
+  padding: 2%;
+  cursor: pointer;
+}
+
+.phone-menu {
+  display: none;
+}
+
+.nav-line {
+  width: 80%;
+  margin: 0 auto;
+  color: #e6dddde5;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+  .parent-div {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-body {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .sideNavBar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow-y: visible;
+    display: none;
+  }
+
+  #hamburger {
+    display: block;
+  }
+
+  .phone-menu {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+  }
+  .phone-menu i {
+    margin-right: 0;
+  }
+
+  .sideNavBar {
+    background-color: #eee5e5;
+    color: black;
+    width: 60vw;
+    position: fixed;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .assessment {
+    margin: 0 auto;
+    width: 90%;
+    height: 10%;
+    background-color: #c3cfe0;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .my-library {
+    margin: 0 auto;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .dashboard {
+    margin: 0 auto;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .roundStatus {
+    width: 60%;
+    height: 10%;
+    margin-top: 8%;
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .roundStatus i {
+    padding-left: 20%;
+  }
+
+  .roundStatus br {
+    display: none;
+  }
+
+  .admin-round .my-admin {
+    font-size: small;
+    width: 20%;
+    height: 50%;
+    background-color: #eedbd9;
+    color: rgb(195, 64, 64);
+    border: 1px solid rgb(195, 64, 64);
+    border-radius: 15px;
+  }
+  .admin-round {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    margin-top: 10px;
+  }
+}

@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/525317fd6d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Assessment</title>
+  </head>
+  <body>
+    <div class="parent-div">
+    <!-- Side Navbar for Desktop-->
+    
+    <div class="sideNavBar" id="sideNavBar1">
+
+      <span class="phone-menu">
+        <h4>Menu</h4>
+        <i onclick={hideNavBar()} id="cross1" class="fa-solid fa-xmark"></i>
+      </span>
+      
+      <div class="dashboard">
+        <i class="fa-solid fa-table-cells-large"></i>
+        <p> Dashboard</p>
+      </div>
+      <div class="assessment">
+        <i class="fa-solid fa-square-pen"></i>
+        <p>Assessment</p>
+      </div>
+      <div class="my-library">
+        <i class="fa-solid fa-clipboard-question"></i>
+        <p>My Library</p>
+      </div>
+      <!-- <div class="my-admin">
+        <p class="admin">Admin</p>
+      </div>
+
+      <div class="roundStatus">
+        <i class="fa-solid fa-link"></i>
+        <p>Round <br >Status</p>
+      </div> -->
+      <hr class="nav-line">
+
+      <div class="admin-round">
+        <div class="my-admin">
+          <p class="admin">Admin</p>
+        </div>
+  
+        <div class="roundStatus">
+          <i class="fa-solid fa-link"></i>
+          <p>Round <br >Status</p>
+        </div>
+      </div>
+
+      <!-- For mobile -->
+
+      
+    </div>
+
+   
+
+    <!-- Main Body -->
+
+    <div class="main-body">
+      <i onclick={showNavBar()} id="hamburger" class="fa-solid fa-bars"></i>
+      <header>
+        <p class="assessment2">Assessment  </p>
+        <b class="vertical"></b>
+        <b class="my-assessment"> <u>My Assessments</u></b>
+      </header>
+      <hr />
+
+      <h2 class="heading-2">Assessment Overview</h2>
+
+      <div class="assessment-overview">
+        <span class="a">
+          <h2>Total Assessment</h2>
+          <span>
+            <i class="fa-solid fa-grip-lines"></i>
+          <h2>34</h2>
+          </span>
+        </span>
+
+        <span class="b">
+          <h2 class="b-head">Candidates</h2>
+          <span class="b-body">
+            <span>
+              <i class="fa-solid fa-user-group"></i>
+            </span>
+            <span class="b1">
+              <span class="b1a">
+                <h2>11,145</h2>
+              <p class="numbers">+89</p>
+              </span>
+              <p class="text">Total Candidate</p>
+            </span>
+            <span class="b2">
+              <span class="b2a">
+                <h2>1,14</h2>
+              <p class="numbers">+89</p>
+              </span>
+              <p class="text">Who Attempted</p>
+            </span>
+          </span>
+        </span>
+
+        <span class="c">
+          <h2 class="c-head">Candidate Source</h2>
+         <span class="c-body">
+          <span>
+            <i class="fa-solid fa-globe"></i>
+          </span>
+          <span class="c1">
+            <span class="c1a">
+              <h2>11,000</h2>
+            <p class="numbers">+89</p>
+            </span>
+            <p class="text">E-mail</p>
+          </span>
+          <span class="c2">
+            <span class="c2a">
+              <h2>145</h2>
+            <p class="numbers">+89</p>
+            </span>
+            <p class="text">Social Share</p>
+          </span>
+          <span class="c3">
+            <span class="c3a">
+              <h2>145</h2>
+            <p class="numbers">+89</p>
+            </span>
+            <p class="text">Unique Link</p>
+          </span>
+         </span>
+        </span>
+
+        <span class="d">
+          <h2 class="d-head">Total Purpose</h2>
+          <span>
+            <i class="fa-solid fa-link"></i>
+          <h2>11</h2>
+          </span>
+        </span>
+
+      </div>
+
+      <h2 class="heading-3">My Assessment</h2>
+
+      <div class="my-assessment">
+
+        <div class="new-assessment">
+          <i onclick={showForm()} class="fa-solid fa-plus"></i>
+            <h2>New Assessment</h2>
+            <p>From here you can add questions of multiple types like <br>
+            <p>MCQs, subjective (text or paragraph)</p></p>
+        </div>
+
+        <div class="math-assessment1">
+          <span class="icons-math">
+            <i class="fa-solid fa-briefcase"></i>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          </span>
+            <h2>Math Assessment</h2>
+            <span class="math-assessment1a">
+              <p>Job</p>
+              <p class="math-assessment1a-text"><i class="fa-regular fa-calendar-days"></i> 20 Apr 2023</p>
+            </span>
+            <span class="math-assessment1b">
+                <p class="math-assessment1b-text">00 <br> Duration</p>
+                <p class="math-assessment1b-text">00 <br> Questions</p>
+                <span>
+                  <p class="lp-2"><i class="fa-solid fa-link"></i> Share</p>
+                <p class="lp-1">LP</p>
+                </span>
+            </span>
+            
+        </div>
+        <div class="math-assessment1">
+          <span class="icons-math">
+            <i class="fa-solid fa-briefcase"></i>
+          <i class="fa-solid fa-ellipsis-vertical"></i>
+          </span>
+            <h2>Math Assessment</h2>
+            <span class="math-assessment1a">
+              <p>Job</p>
+              <p class="math-assessment1a-text"><i class="fa-regular fa-calendar-days"></i> 20 Apr 2023</p>
+            </span>
+            <span class="math-assessment1b">
+                <p class="math-assessment1b-text">00 <br> Duration</p>
+                <p class="math-assessment1b-text">00 <br> Questions</p>
+                <span>
+                  <p class="lp-2"><i class="fa-solid fa-link"></i> Share</p>
+                <p class="lp-1">LP</p>
+                </span>
+                
+            </span>
+            
+        </div>
+      </div>
+    </div>
+
+</div>
+
+<!-- Form Body -->
+
+<div id="form-body">
+  <div class="form">
+    <span class="form-heading">
+      <h2>Create new assessment</h2>
+      <i onclick={hideForm()} id="cross" class="fa-solid fa-xmark"></i>
+    </span>
+    <hr />
+    <div class="mb-3">
+      <label for="formGroupExampleInput" class="form-label"
+        >Name of assessment</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="formGroupExampleInput"
+        placeholder="Type Here"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label"
+        >Purpose of the test is</label
+      >
+      <select
+        type="text"
+        class="form-control"
+        id="formGroupExampleInput2"
+        placeholder="Select"
+      >
+        <option value="select">Select</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label"
+        >Description</label
+      >
+      <select
+        type="text"
+        class="form-control"
+        id="formGroupExampleInput2"
+        placeholder="Select"
+      >
+        <option value="select">Select</option>
+      </select>
+    </div>
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label">Skills</label>
+      <div id="skills" class="form-control">
+        <div class="div-1">
+          <span class="skill">UI/UX and Design X</span>
+          <span class="skill">No of Question X</span
+          ><span class="skill"> Web Development X</span>
+        </div>
+        <div>
+          <span class="skill">UI/UX and Design X</span
+          ><span class="skill"> Web Development X</span>
+        </div>
+        <input class="skill-input" type="text" placeholder="Type Here" />
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label for="formGroupExampleInput2" class="form-label"
+        >Duration of assessment</label
+      >
+      <input
+        type="text"
+        class="form-control"
+        id="formGroupExampleInput2"
+        placeholder="HH:MM:SS"
+      />
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+  </body>
+</html>
