@@ -8,6 +8,7 @@ const AssessmentOverview = document.getElementById(
 
 formBody.style.display = "none";
 AssessmentOverview.style.display = "none";
+sideNavBar.style.display = "none";
 
 const showForm = () => {
   formBody.style.display = "inline";
