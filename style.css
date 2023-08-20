@@ -401,6 +401,10 @@ h2 {
   color: rgb(30, 84, 138);
 }
 
+.my-assessment-mobile-heading span {
+  display: none;
+}
+
 .math-assessment1b {
   display: flex;
   flex-direction: row;
@@ -674,6 +678,9 @@ button {
 
   /* Form Section */
 
+  .form {
+    width: 100vw;
+  }
   #form-heading2 {
     display: block;
   }
@@ -682,7 +689,7 @@ button {
     display: none;
   }
   .skill {
-    padding: 3px;
+    padding: 4px;
     background-color: rgb(184, 184, 212);
     color: blue;
     border-radius: 10px;
@@ -755,5 +762,32 @@ button {
     border-left: 1px solid rgb(184, 184, 197);
     height: 30px;
     position: relative;
+  }
+
+  .assessment-overview {
+    display: none;
+  }
+
+  .heading-2 {
+    display: none;
+  }
+  .my-assessment-mobile-heading span {
+    display: block;
+    margin-top: 22px;
+  }
+  .my-assessment-mobile-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .my-assessment-mobile-heading i {
+    padding: 0 3px;
+  }
+  #tower {
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: #c3cfe0;
+    padding: 8px;
+    cursor: pointer;
   }
 }
