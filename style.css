@@ -823,4 +823,22 @@ button {
   .mobile-a h2 {
     font-size: small;
   }
+
+  .mobile-a .a {
+    border: none;
+  }
+  .mobile-a .d {
+    border: none;
+  }
+  .mobile-c .b {
+    border: none;
+  }
+  .mobile-d .c {
+    border: none;
+  }
+
+  #assessment-overview-mobile {
+    margin-top: 10px;
+    border-radius: 10px;
+  }
 }
