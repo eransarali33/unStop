@@ -579,13 +579,13 @@ button {
     width: 100%;
   }
 
-  .sideNavBar {
+  /* .sideNavBar {
     position: relative;
     width: 100%;
     height: auto;
     overflow-y: visible;
-    display: none;
-  }
+    /* display: none; */
+  } */
 
   #hamburger {
     display: block;
