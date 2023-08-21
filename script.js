@@ -6,9 +6,12 @@ const AssessmentOverview = document.getElementById(
   "assessment-overview-mobile"
 );
 
+const tower = document.getElementById("tower");
+const tower1 = document.getElementById("tower1");
+
 formBody.style.display = "none";
 AssessmentOverview.style.display = "none";
-// sideNavBar.style.display = "none";
+tower1.style.display = "none";
 
 const showForm = () => {
   formBody.style.display = "inline";
@@ -30,4 +33,12 @@ const hideNavBar = () => {
 
 const showAssessmentOverview = () => {
   AssessmentOverview.style.display = "block";
+  tower.style.display = "none";
+  tower1.style.display = "block";
+};
+
+const hideAssessmentOverview = () => {
+  AssessmentOverview.style.display = "none";
+  tower1.style.display = "none";
+  tower.style.display = "block";
 };

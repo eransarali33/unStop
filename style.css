@@ -680,7 +680,6 @@ button {
   }
   .admin-round {
     display: flex;
-    /* justify-content: center; */
     justify-content: space-between;
     flex-direction: row-reverse;
     margin-top: 10px;
@@ -794,6 +793,13 @@ button {
     padding: 0 3px;
   }
   #tower {
+    border-radius: 50%;
+    border: 1px solid blue;
+    background-color: #c3cfe0;
+    padding: 8px;
+    cursor: pointer;
+  }
+  #tower1 {
     border-radius: 50%;
     border: 1px solid blue;
     background-color: #c3cfe0;
